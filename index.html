@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Green Dream Landscapes — Website & Advertising Audit</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website &amp; Advertising Audit</div>
+    <h1>Green Dream Landscapes Ltd &mdash; Huddersfield</h1>
+    <div class="sub">Prepared for Daniel Paxman &middot; 26 August 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="gradecard gc-C">
+      <div class="bigletter bl-C">C&minus;</div>
+      <div class="score100">43 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>You are sitting on the most valuable thing in landscaping and the website barely mentions it.</h2>
+      <p>Most landscapers sell one-off builds and start every month from zero.
+      <b>You offer grounds maintenance</b> &mdash; recurring, contracted, predictable revenue that
+      compounds. On your site it is one menu item among six, given the same weight as tree surgery.
+      Meanwhile <b>nothing on the site is tracked at all</b>, so no one can tell which of your six
+      services is actually bringing the work in.</p>
+      <span class="tag">Huddersfield &middot; WordPress &middot; recruiting a team leader</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Meta description written</div><div class="sc">Present, readable, and it names Huddersfield. Better than most trades we audit.</div></div><div class="badge gB">B+</div></div>
+      <div class="row"><div><div class="rname">Service range</div><div class="sc">Grounds maintenance, soft and hard landscaping, timber, tree surgery, design and build.</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Your own project photography</div><div class="sc">A genuine portfolio of finished work rather than stock imagery.</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Named local testimonials</div><div class="sc">Three, with real places attached — Fixby, Brighouse, Leeds.</div></div><div class="badge gC">C+</div></div>
+      <div class="row"><div><div class="rname">Analytics installed</div><div class="sc">No GA4, no tag manager, no Universal Analytics, no pixel. Nothing at all.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">None, so no enquiry can be attributed to anything that produced it.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Tap-to-call phone number</div><div class="sc">07534 189761 is not a tel: link in the served page. A phone will not dial it on tap.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Homepage title tag</div><div class="sc">&ldquo;Home - green dream landscapes&rdquo; — lower case, no service words, no town.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Grounds maintenance positioned</div><div class="sc">Your recurring-revenue service is one menu item, not the front of the business.</div></div><div class="badge gD">D&minus;</div></div>
+      <div class="row"><div><div class="rname">Commercial route in</div><div class="sc">No separate commercial page. A facilities manager and a homeowner get the same site.</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Accreditations</div><div class="sc">No APL, BALI, Marshalls or TrustMark badge appears on the site.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Reviews as a rating and count</div><div class="sc">Three testimonials, but no star rating and no review count anywhere.</div></div><div class="badge gD">D</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Grounds Maintenance Is The Business. Sell It That Way.</div>
+    <div class="flag">
+      <div class="lab">The strategic finding, and the reason this audit is worth your time</div>
+      <p>Landscaping is a feast-and-famine trade. You build a garden for &pound;12,000, you get paid,
+      and then you need another one. <b>Grounds maintenance is the opposite</b> &mdash; a contract, a
+      schedule, an invoice every month, and a customer who does not go away in January.</p>
+      <div class="code">
+A one-off landscape build   won once, paid once, then you start again
+A maintenance contract      <span class="ok">won once, paid every month, renews</span>
+
+Where it sits on your site  <span class="ph">one of six equal menu items</span>
+Its own dedicated page      <span class="ph">&#10007;</span>
+A commercial page at all    <span class="ph">&#10007;</span>
+      </div>
+      <p>The buyers are different people. A homeowner wants a garden that looks lovely. <b>A schools
+      trust, a housing association, a managing agent or an industrial estate wants a reliable
+      contractor with insurance and a schedule</b> &mdash; and they are searching for exactly that.
+      They arrive at your site, find a homeowner's landscaping page, and cannot tell whether you do
+      what they need.</p>
+      <p><b>You are recruiting an experienced team leader.</b> That is the shape of a firm adding
+      capacity. Capacity paid for by contracts is a safer business than capacity paid for by the next
+      big build.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Nothing Is Being Measured</div>
+    <div class="warn">
+      <div class="lab">We read your served page source directly</div>
+      <div class="code">
+GA4 tag                <span class="ph">&#10007; none</span>
+Google Tag Manager     <span class="ph">&#10007; none</span>
+Universal Analytics    <span class="ph">&#10007; none</span>
+Meta pixel             <span class="ph">&#10007; none</span>
+Conversion tracking    <span class="ph">&#10007; none</span>
+      </div>
+      <p>Six services, no data. So nobody can say whether the enquiries are coming for tree surgery or
+      for design and build, which page produces them, or what any of it costs. <b>With six services and
+      no measurement, effort gets spread evenly across all six by default</b> &mdash; when the honest
+      likelihood is that one or two of them pay for the business.</p>
+      <p>This is first, it is cheap, and it has to happen before any advertising is worth running:
+      Google's bidding needs conversion data to optimise against, and with none it optimises for
+      clicks.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Three Testimonials And No Number</div>
+    <div class="warn">
+      <div class="lab">The proof is real but it is not in a form that competes</div>
+      <p>You have three named testimonials with genuine local places attached &mdash; Fixby, Brighouse
+      and Leeds. That is real proof and it is more than many have.</p>
+      <p>What is missing is <b>a star rating and a review count</b>. When someone chooses a landscaper
+      for a &pound;10,000 garden, they compare three firms and the visible number does the deciding.
+      Paragraphs of praise on your own website are read as marketing; a rating out of five with a count
+      beside it is read as evidence, because the customer knows you did not write it.</p>
+      <p>Nothing on this page is cheaper to fix. It costs a message to recent customers.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Title Tag</div>
+    <div class="warn">
+      <div class="lab">Your Google headline currently says almost nothing</div>
+      <div class="code">
+What yours says now  <span class="ph">Home - green dream landscapes</span>
+What it could say    <span class="ok">Landscaping &amp; Grounds Maintenance in Huddersfield | Green Dream</span>
+      </div>
+      <p>&ldquo;Home&rdquo; occupies the most valuable position on the page and earns nothing. The
+      brand name is not capitalised. Neither the service nor the town appears &mdash; and your own meta
+      description already names Huddersfield, so the information exists on the page and simply is not
+      in the line Google shows first.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity In Numbers</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">Five maintenance contracts</div><div class="big">&pound;30,000</div><div class="small">a year at &pound;500 a month each</div></div>
+      <div class="ocard"><div class="lab">Ten contracts</div><div class="big">&pound;60,000</div><div class="small">a year, recurring</div></div>
+      <div class="ocard"><div class="lab">Services tracked today</div><div class="big">0</div><div class="small">of six</div></div>
+    </div>
+    <p class="oppnote"><b>&pound;500 a month is our assumption, not your figure</b> &mdash; you have not
+    told us your contract values and we are not going to invent them, so bring the real number to the
+    call and these change. The point of the cards is the <b>shape</b>: contract revenue arrives whether
+    or not you win a build that month, it is the revenue a lender or a hire company looks at, and it is
+    what makes a new team leader affordable rather than risky.</p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div class="gradecard gc-C" style="flex:1"><div class="bigletter bl-C">C&minus;</div><div class="score100">43 / 100 today</div></div>
+      <div class="ar">&rarr;</div>
+      <div class="gradecard gc-B" style="flex:1"><div class="bigletter" style="color:#3fb950;text-shadow:0 0 40px rgba(63,185,80,.45)">A&minus;</div><div class="score100">88 / 100 projected</div></div>
+    </div>
+    <p class="oppnote">Projected, not promised. It reflects the twelve rows above being fixed, which is
+    within your control and ours. <b>It is not a projection of leads, contracts or revenue.</b></p>
+  </section>
+
+  <section>
+    <div class="h">Fix First &mdash; No Spend Required</div>
+    <ul class="road">
+      <li><b>Install GA4 and conversion tracking.</b> Six services and no data is the core problem</li>
+      <li><b>Make 07534 189761 a tel: link</b> on every page</li>
+      <li><b>Rewrite the title tag.</b> Drop &ldquo;Home&rdquo;, add landscaping, grounds maintenance and Huddersfield</li>
+      <li><b>Ask recent customers for a Google review</b> so the proof becomes a number, not a paragraph</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next</div>
+    <ul class="road road2">
+      <li><b>A dedicated grounds maintenance page</b> written for a facilities or estate manager, not a homeowner</li>
+      <li><b>A separate commercial route in</b> — insurance, schedules, references, and a form that asks site size and frequency</li>
+      <li><b>Publish insurance and any APL or BALI membership</b> if you hold them — commercial buyers check first</li>
+      <li><b>Town pages</b> for Huddersfield, Brighouse, Halifax, Elland, Holmfirth and Dewsbury</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>Six services, no measurement, and the recurring one buried among the rest.</h2>
+    <p>The landscaping is clearly good — the photographs and the testimonials show that. The gap is
+    that the part of your business that could pay you every month is presented as an afterthought.</p>
+  </div>
+
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 26 August 2026<br>
+  For Daniel Paxman of Green Dream Landscapes Ltd, Huddersfield. All findings were read from
+  greendreamlandscapes.co.uk and its served page source on 25 August 2026 and reflect that date only.
+  <b>Absence of a tracking tag, accreditation, insurance statement or review count means it was not
+  present in the served page &mdash; not that you do not hold it</b>, and anything held but unpublished
+  would not appear in this check. Your site is built on WordPress with Elementor, which renders some
+  elements after page load; <b>the contact form's fields could not be read from the served source and
+  are therefore not assessed here</b>, and the tel: finding refers to the served homepage. The
+  &pound;500 per month contract value is <b>our assumption and not your figure</b> — the revenue cards
+  are arithmetic on that assumption, not a forecast, not a projection of your results and not a
+  guarantee. Your capacity for additional work is as stated to our team and has not been independently
+  verified. Grades are our own assessment against a consistent framework and are not an
+  industry-standard measure.
+</footer>
+</body></html>
